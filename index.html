@@ -57,7 +57,7 @@
 .navlink:hover{
     color: var(--link-color);
 }
-.contactbutton{
+#contactbutton{
     background-color: rgba(69, 69, 184, 0.918);
     font-size: 1.1rem ;
     border-radius: .3rem;
@@ -366,9 +366,9 @@ background-color: rgba(69, 69, 184, 0.918);
 }
     </style>
             <script type="text/javascript">
-        function prompt(){
-        alert('contact us on shubhamdekhraw4@gmail.com');
-        }
+       function print(){
+    document.getElementById('contactbutton').innerHTML="shubhamdekhraw@gmail.com";
+}
     </script>
 </head>
 <body>
@@ -387,7 +387,7 @@ background-color: rgba(69, 69, 184, 0.918);
                         <a href="#about" class="navlink">About</a>
                     </nav>
 
-                    <button onclick="prompt()" class="contactbutton">Contact us</button>
+                    <button onclick="print()" id="contactbutton">Contact us</button>
                 
                 </header>
 
